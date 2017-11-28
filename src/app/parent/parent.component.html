@@ -1,0 +1,9 @@
+<div>
+  <h2>
+    Check the version here
+  </h2>
+  <button (click) = "updateMajor()">Update Major Version</button>
+  <button (click) = 'updateMinor()'>Update Minor Version </button>
+  <p>  {{ myValue }} </p>
+  <app-child (childEmitter)="getMyValue($event)" [minorVersion]="getMinor()" [majorVersion]="getMajor()"  ></app-child>
+</div>
